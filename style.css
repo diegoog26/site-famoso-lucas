@@ -235,8 +235,8 @@ main .container h2 {
     }
 
     #video iframe {
-        height: 315;
-        width: 560;
+        height: 315px;
+        width: 560px;
     }
 }
 
