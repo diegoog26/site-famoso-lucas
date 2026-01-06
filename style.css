@@ -234,7 +234,7 @@ main .container h2 {
 }
 
 #palavras {
-    background: url(/img/palavrasfundo.png);
+    background: url(./img/palavrasfundo.png);
     background-size: cover;
     background-position: center;
     border-bottom: 3px solid var(--branco);
