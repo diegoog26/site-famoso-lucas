@@ -2,7 +2,9 @@
     --branco: #fff;
     --preto: #000;
     --escuroazul: #07001F;
-    --vermelho: #c4302b;
+    --vermelho: #ff0002;
+    --dourado: #FFD700;
+    --azul: #0057FF;
 }
 
 * {
@@ -36,8 +38,8 @@ header .container {
 }
 
 #logo img {
-    height: 60px;
-    width: 230px;
+    height: 50px;
+    width: 195px;
     margin-top: 10px;
 }
 
@@ -114,7 +116,7 @@ main .container h2 {
 #destaque .container {
     flex-direction: column;
     align-items: center;
-    padding: 50px 0px;
+    padding: 50px 10px;
 }
 
 #destaque .container #foto img {
@@ -143,7 +145,7 @@ main .container h2 {
 }
 
 #principal {
-    background: url(img/FundoPreto.png);
+    background: url(./img/FundoPretoBrilhoBaixo.png);
     background-size: cover;
     background-position: center;
     border-bottom: 3px solid var(--branco);
@@ -155,31 +157,36 @@ main .container h2 {
     text-align: left;
 }
 
-#video {
+.video {
     text-align: center;
+    align-items: center;
 }
 
-#video iframe {
+.video iframe {
     height: 191px;
     width: 340px;
-    border: 2px solid var(--branco);
-}
-
-#video h2 {
-    color: var(--branco);
-}
-
-#principal .container #texto2 {
-    color: var(--branco);
     margin-bottom: 15px;
 }
 
-#texto2 p {
-    margin: 15px 0px;
+#principal .container .video iframe {
+    border: 2px solid var(--branco);
+}
+
+.video h2 {
+    color: var(--branco);
+}
+
+#principal .container .texto2 {
+    color: var(--branco);
+}
+
+.texto2 p {
+    padding: 5px 0px;
     font-size: 1.3rem;
 }
 
 .btn {
+    display: inline-block;
     height: 70px;
     width: 350px;
     text-decoration: none;
@@ -193,8 +200,86 @@ main .container h2 {
     align-items: center;
     justify-content: center;
     display: flex;
+    text-align: center;
     gap: 10px;
     margin-top: 30px;
+    margin: 0 auto;
+}
+
+
+#tralhas {
+    background: url(./img/FundoCInza.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid var(--branco);
+
+}
+
+#tralhas .container {
+    flex-direction: column;
+    padding: 50px 10px;
+    text-align: left;
+}
+
+#tralhas .container .texto2 {
+    color: var(--branco);
+}
+
+#tralhas .container .video h2 {
+    color: var(--branco);
+}
+
+#tralhas .container .video iframe {
+    border: 2px solid var(--branco);
+}
+
+#palavras {
+    background: url(/img/PalavrasBackground.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid var(--branco);
+}
+
+#palavras .container {
+    flex-direction: column;
+    padding: 50px 10px;
+    text-align: left;
+}
+
+#palavras .texto2{
+    color: var(--branco);
+}
+
+#palavras .container .video iframe {
+    border: 2px solid var(--branco);
+}
+
+footer{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+footer .container{
+    padding: 50px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container #redess{
+    margin-bottom: 15px;
+}
+
+footer .container #redess a{
+    padding: 0px 5px;
+}
+
+footer .container #redess a {
+    text-decoration: none;
+    color: #898989;
+}
+
+footer .container #redess a:hover{
+    color: #4D4673;
 }
 
 @media (min-width: 576px) {
@@ -206,15 +291,10 @@ main .container h2 {
         width: 40%;
     }
 
-    .btn {
-        margin-left: 85px;
+    .video iframe {
+        width: 520px;
+        height: 275px;
     }
-
-    #video iframe {
-        width: 560px;
-        height: 315px;
-    }
-
 }
 
 @media (min-width: 768px) {
@@ -230,11 +310,7 @@ main .container h2 {
         font-size: 2.1rem;
     }
 
-    .btn {
-        margin-left: 175px;
-    }
-
-    #video iframe {
+    .video iframe {
         height: 315px;
         width: 560px;
     }
@@ -243,10 +319,6 @@ main .container h2 {
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
-    }
-
-    .btn {
-        margin-left: 295px;
     }
 }
 
@@ -269,8 +341,8 @@ main .container h2 {
     }
 
     #logo img {
-        height: 80px;
-        width: 305px;
+        height: 70px;
+        width: 255px;
     }
 
     #logo {
@@ -311,21 +383,44 @@ main .container h2 {
         text-align: left;
     }
 
+    #destaque .container #foto {
+        padding-left: 10px;
+    }
+
     #texto {
         margin-left: 50px;
         margin-bottom: 30px;
     }
 
-    #principal .container{
+    #principal .container {
         flex-direction: row;
     }
 
-    .btn{
-        margin-left: 105px;
+    .texto2 {
+        margin-right: 50px;
     }
 
-    #texto2{
-        margin-right: 50px;
+    #tralhas .container {
+        flex-direction: row;
+    }
+
+    #palavras .container{
+        flex-direction: row;
+    }
+
+    footer .container{
+        flex-direction: row-reverse;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .container #redess{
+        margin-bottom: 0px;
+    }
+
+    footer .container #copyright h2{
+        font-size: 1.1rem;
     }
 
 }

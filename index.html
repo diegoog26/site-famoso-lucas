@@ -2,6 +2,9 @@
 <html lang="pt-br">
 
 <head>
+    <!--
+    @author: Diego Galdino
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FamosoStudios</title>
@@ -25,15 +28,15 @@
                 <input type="checkbox" id="check">
                 <label for="check">&#x268c;</label>
                 <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Canais</a></li>
-                    <li><a href="">Redes</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#destaque">Sobre</a></li>
+                    <li><a href="#principal">Canais</a></li>
+                    <li><a href="#redes">Redes</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main id="inicio">
         <div class="container">
             <h1>FAMOSO STUDIOS</h1>
             <h2>O universo dos games em áudio</h2>
@@ -59,8 +62,8 @@
     </section>
     <section id="principal">
         <div class="container">
-            <div id="texto2">
-                <h1>🎮 FamosoLucas</h1>
+            <div class="texto2">
+                <h2>🎮 FamosoLucas</h2>
                 <p>O FamosoLucas é o canal principal do criador, onde ele se dedica a produzir vídeos sobre videogames
                     com o máximo de qualidade possível. Aqui, cada conteúdo é feito com cuidado: se o tema não for
                     interessante ou o resultado não atingir o nível que ele considera ideal, o vídeo simplesmente não
@@ -68,7 +71,7 @@
                 <p>Para ele, criatividade e qualidade caminham juntas — e só vale a pena publicar algo que realmente
                     represente bem suas ideias, opiniões e paixão pelos jogos.</p>
             </div>
-            <div id="video">
+            <div class="video">
                 <h2>Vídeo mais recente:</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3Rsx00KbvQ?si=QPgIO_rVtKOnbC1j"
                     title="YouTube video player"
@@ -77,9 +80,78 @@
                 <a href="https://www.youtube.com/@FamosoLucas" target="_blank" rel="noopener noreferrer" class="btn">
                     <img src="./img/youtubevermelho.png" alt="youtube">
                     Canal Principal
-            </a>
+                </a>
+            </div>
         </div>
     </section>
+
+    <section id="tralhas">
+        <div class="container">
+            <div class="texto2">
+                <h2>🏓 Tralhas do Famoso</h2>
+                <p>Tralhas do Famoso é o canal secundário do criador FamosoLucas, feito para receber vídeos mais
+                    simples, diretos e descontraídos sobre videogames. Enquanto seu canal principal foca em produções
+                    mais elaboradas, aqui ele posta conteúdos rápidos, ideias espontâneas, testes, opiniões e qualquer
+                    outra “tralha” que ele queira compartilhar sem tanta formalidade.
+                <p>
+                <p>É um espaço mais leve, onde ele pode se expressar com liberdade e manter o público sempre acompanhado
+                    do seu lado mais casual e natural.</p>
+            </div>
+            <div class="video">
+                <h2>Vídeo mais recente:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kTDwwBIg59c?si=QkH_r6fw3IRpkjBG"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a href="https://www.youtube.com/@TralhasDoFamoso" target="_blank" rel="noopener noreferrer"
+                    class="btn">
+                    <img src="./img/youtubevermelho.png" alt="youtube">
+                    Tralhas do Famoso
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="palavras">
+        <div class="container">
+            <div class="texto2">
+                <h2>🎙️ Palavras</h2>
+                <p>Palavras é o podcast do youtuber FamosoLucas, onde ele se reúne com amigos para conversar de forma
+                    leve e descontraída sobre jogos e tudo o que envolve o mundo do entretenimento. Em cada episódio, o
+                    papo flui entre opiniões, experiências pessoais, curiosidades e reflexões, sempre com muita
+                    liberdade para falar sobre os temas que realmente interessam ao grupo.</p>
+                <p>
+                    Mais do que apenas falar de videogames, o podcast é um espaço para trocar ideias, dar risada e se
+                    expressar sobre cultura pop, internet e assuntos do dia a dia, criando um ambiente próximo e
+                    autêntico para quem acompanha.
+                </p>
+            </div>
+            <div class="video">
+                <h2>Episódio mais recente:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/979Gl_3zFkk?si=I-ROr-HbOXwxL0_d"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a href="https://www.youtube.com/@PalavrasPodcast/featured" target="_blank" rel="noopener noreferrer"
+                    class="btn">
+                    <img src="./img/youtubevermelho.png" alt="youtube">
+                    Palavras
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer id="redes">
+        <div class="container">
+            <div id="redess">
+                <a href="https://www.youtube.com/@FamosoLucas/featured" target="_blank" rel="noopener noreferrer">Youtube</a>
+                <a href="https://apoia.se/famosolucas" target="_blank" rel="noopener noreferrer">Apoia-se</a>
+                <a href="https://discord.com/invite/3YJpfYGnTN" target="_blank" rel="noopener noreferrer">Discord</a>
+            </div>
+            <div id="copyright">
+                <h2>©<span id="copyrightYear"></span> Diego Galdino</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
